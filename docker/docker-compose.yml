@@ -1,0 +1,8 @@
+services:
+  web:
+    image: 
+    ports:
+    - "8081:80"
+  volumes:
+    - ./web:/usr/share/nginx/html
+    - ./web/file:/usr/share/nginx/html/file
