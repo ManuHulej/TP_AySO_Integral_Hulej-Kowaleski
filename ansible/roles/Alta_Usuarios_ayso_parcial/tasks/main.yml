@@ -1,0 +1,14 @@
+---
+- name: Crear usuarios del grupo
+  user:
+    name: "{{ item.name }}"
+    groups: "{{ item.primary_group }},ayso_parcial"
+    password: "{{ 'vagrant' | password_hash('sha512') }}"
+    state: present
+  loop:
+    - { name: "R1_Manuel",  primary_group: "G_R1" }
+    - { name: "R2_Manuel",    primary_group: "G_R2" }
+    - { name: "R3_Santino",    primary_group: "G_R3" }
+    - { name: "R4_Santino",    primary_group: "G_R4" }
+    - { name: "R5_Manuel", primary_group: "G_R5" }
+    - { name: "R6_Santino", primary_group: "G_R6" }

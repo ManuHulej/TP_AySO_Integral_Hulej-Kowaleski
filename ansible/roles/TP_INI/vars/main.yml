@@ -1,0 +1,19 @@
+---
+# vars file for TP_INI
+grupo: ayso_parcial
+division: 314
+fecha: "03/07/2025"
+
+r1_nombre: Manuel
+r1_apellido: Hulej
+r2_nombre: Manuel 
+r2_apellido: Hulej
+r3_nombre: Santino
+r3_apellido: Kowalewski
+r4_nombre: Santino
+r4_apellido: Kowalewski
+r5_nombre: Manuel
+r5_apellido: Hulej
+r6_nombre: Santino
+r6_apellido: Kowalewski
+
