@@ -7,22 +7,22 @@
 
   tasks:
     - name: Ejecutar TP_INI
-      include_role:
+      import_role:
         name: TP_INI
     - name: Crear Roles
-      include_role:
+      import_role:
         name: crear_roles
 
     - name: Crear usuarios del grupo
-      include_role:
+      import_role:
         name: Alta_Usuarios_ayso_parcial
 
     - name: Configurar sudoers del grupo
-      include_role:
+      import_role:
         name: Sudoers_ayso_parcial
 
     - name: Instalar herramientas
-      include_role:
+      import_role:
         name: Instalar-tools_ayso_parcial
 
     - name: "Final"
